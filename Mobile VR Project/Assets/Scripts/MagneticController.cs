@@ -22,7 +22,7 @@ public class MagneticController {
         magnetForce = Input.compass.rawVector.magnitude;
         acceleration = prevAcceleration.magnitude;
         normalizedMagnet = magnetForce;
-
+        
     }
 
     public bool CheckMagneticSensor()
