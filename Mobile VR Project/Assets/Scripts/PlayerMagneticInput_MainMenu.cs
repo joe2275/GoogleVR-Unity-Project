@@ -18,7 +18,7 @@ public class PlayerMagneticInput_MainMenu : MonoBehaviour {
     {
         if(magneticController.CheckMagneticSensor())
         {
-            
+            reticlePointer.
         }
     }
 }
