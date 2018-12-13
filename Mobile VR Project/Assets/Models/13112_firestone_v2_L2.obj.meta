@@ -1,0 +1,180 @@
+fileFormatVersion: 2
+guid: 2b89eaef0511b7b43816f244e13c9523
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: 13112_firestone_base
+    100002: 13112_firestone_botbricksaround
+    100004: 13112_firestone_concretaround
+    100006: 13112_firestone_doorglassR
+    100008: 13112_firestone_doorhandleL
+    100010: 13112_firestone_doorhandleR
+    100012: 13112_firestone_doorL
+    100014: 13112_firestone_doorR
+    100016: 13112_firestone_itemholder
+    100018: 13112_firestone_metals
+    100020: 13112_firestone_topbricksaround
+    100022: //RootNode
+    100024: 13112_firestone_woodsburn_01
+    100026: 13112_firestone_woodsburn_02
+    100028: 13112_firestone_woodsburn_03
+    100030: 13112_firestone_woodsburn_05
+    400000: 13112_firestone_base
+    400002: 13112_firestone_botbricksaround
+    400004: 13112_firestone_concretaround
+    400006: 13112_firestone_doorglassR
+    400008: 13112_firestone_doorhandleL
+    400010: 13112_firestone_doorhandleR
+    400012: 13112_firestone_doorL
+    400014: 13112_firestone_doorR
+    400016: 13112_firestone_itemholder
+    400018: 13112_firestone_metals
+    400020: 13112_firestone_topbricksaround
+    400022: //RootNode
+    400024: 13112_firestone_woodsburn_01
+    400026: 13112_firestone_woodsburn_02
+    400028: 13112_firestone_woodsburn_03
+    400030: 13112_firestone_woodsburn_05
+    2100000: 13112_firestone_baseMat
+    2100002: 13112_firestone_botbricksaroundMat
+    2100004: 13112_firestone_concretaroundMat
+    2100006: 13112_firestone_doorglassRMat
+    2100008: 13112_firestone_doorhandleLMat
+    2100010: 13112_firestone_doorhandleRMat
+    2100012: 13112_firestone_doorLMat
+    2100014: 13112_firestone_doorRMat
+    2100016: 13112_firestone_itemholderMat
+    2100018: 13112_firestone_metalsMat
+    2100020: 13112_firestone_topbricksaroundMat
+    2100022: 13112_firestone_woodsburn_01Mat
+    2100024: 13112_firestone_woodsburn_02Mat
+    2100026: 13112_firestone_woodsburn_03Mat
+    2100028: 13112_firestone_woodsburn_05Mat
+    2300000: 13112_firestone_base
+    2300002: 13112_firestone_botbricksaround
+    2300004: 13112_firestone_concretaround
+    2300006: 13112_firestone_doorglassR
+    2300008: 13112_firestone_doorhandleL
+    2300010: 13112_firestone_doorhandleR
+    2300012: 13112_firestone_doorL
+    2300014: 13112_firestone_doorR
+    2300016: 13112_firestone_itemholder
+    2300018: 13112_firestone_metals
+    2300020: 13112_firestone_topbricksaround
+    2300022: 13112_firestone_woodsburn_01
+    2300024: 13112_firestone_woodsburn_02
+    2300026: 13112_firestone_woodsburn_03
+    2300028: 13112_firestone_woodsburn_05
+    3300000: 13112_firestone_base
+    3300002: 13112_firestone_botbricksaround
+    3300004: 13112_firestone_concretaround
+    3300006: 13112_firestone_doorglassR
+    3300008: 13112_firestone_doorhandleL
+    3300010: 13112_firestone_doorhandleR
+    3300012: 13112_firestone_doorL
+    3300014: 13112_firestone_doorR
+    3300016: 13112_firestone_itemholder
+    3300018: 13112_firestone_metals
+    3300020: 13112_firestone_topbricksaround
+    3300022: 13112_firestone_woodsburn_01
+    3300024: 13112_firestone_woodsburn_02
+    3300026: 13112_firestone_woodsburn_03
+    3300028: 13112_firestone_woodsburn_05
+    4300000: 13112_firestone_base
+    4300002: 13112_firestone_botbricksaround
+    4300004: 13112_firestone_concretaround
+    4300006: 13112_firestone_doorglassR
+    4300008: 13112_firestone_doorhandleL
+    4300010: 13112_firestone_doorhandleR
+    4300012: 13112_firestone_doorL
+    4300014: 13112_firestone_doorR
+    4300016: 13112_firestone_itemholder
+    4300018: 13112_firestone_metals
+    4300020: 13112_firestone_topbricksaround
+    4300022: 13112_firestone_woodsburn_01
+    4300024: 13112_firestone_woodsburn_02
+    4300026: 13112_firestone_woodsburn_03
+    4300028: 13112_firestone_woodsburn_05
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
