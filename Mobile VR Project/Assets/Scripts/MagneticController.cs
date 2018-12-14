@@ -38,6 +38,7 @@ public class MagneticController {
 
         if (acceleration < THRESHOLD_ACCELERATION && magnetForce / normalizedMagnet > THRESHOLD_MAGNETIC_FORCE)
         {
+            
             return true;
         }
         return false;

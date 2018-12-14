@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerMagneticInput_MainMenu : MonoBehaviour {
 
     private MagneticController magneticController;
-    [SerializeField]
-    private GvrReticlePointer reticlePointer;
+
+    private GvrEventExecutor eventExecutor;
 
     private void Awake()
     {
@@ -14,11 +14,16 @@ public class PlayerMagneticInput_MainMenu : MonoBehaviour {
         magneticController = new MagneticController();
     }
 
+    private void Start()
+    {
+        eventExecutor = GvrPointerInputModule.FindEventExecutor();
+    }
+
     private void Update()
     {
         if(magneticController.CheckMagneticSensor())
         {
-            reticlePointer.
+            
         }
     }
 }
