@@ -59,12 +59,14 @@ public class PlayerCameraController : MonoBehaviour {
         if(!isStop)
         {
             isStop = true;
+            magneticController.CheckMagneticSensor();
             playerRb.isKinematic = true;
             playerAnimator.enabled = false;
         }
         else
         {
             isStop = false;
+            magneticController.CheckMagneticSensor();
             StartCoroutine(RotateToAngle());
             playerRb.isKinematic = false;
             playerAnimator.enabled = true;

@@ -27,6 +27,7 @@ public class PlayEventTrigger : MonoBehaviour {
     public void Focus(bool isFocused)
     {
         this.isFocused = isFocused;
+        magneticController.CheckMagneticSensor();
     }
 
     public void Click()

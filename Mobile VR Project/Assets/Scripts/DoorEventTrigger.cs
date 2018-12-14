@@ -36,6 +36,7 @@ public class DoorEventTrigger : MonoBehaviour {
 
     public void Focus(bool isFocused)
     {
+        magneticController.CheckMagneticSensor();
         this.isFocused = isFocused;
         doorAnimator.SetBool("focused", isFocused);
         doorAudioSource.clip = focusedDoorSound;
