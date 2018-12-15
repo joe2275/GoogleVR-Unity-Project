@@ -14,8 +14,8 @@ public class MagneticController : MonoBehaviour
 
     private float normalizedMagnet;
     private float magnetForce;
-    private float acceleration;
-    private Vector3 prevAcceleration;
+    //private float acceleration;
+    //private Vector3 prevAcceleration;
 
     private bool isChecked;
 
@@ -25,9 +25,9 @@ public class MagneticController : MonoBehaviour
 
         Application.targetFrameRate = 120;
         Input.compass.enabled = true;
-        prevAcceleration = Input.acceleration;
+        //prevAcceleration = Input.acceleration;
         magnetForce = Input.compass.rawVector.magnitude;
-        acceleration = prevAcceleration.magnitude;
+        //acceleration = prevAcceleration.magnitude;
         normalizedMagnet = magnetForce;
         instance = this;
     }

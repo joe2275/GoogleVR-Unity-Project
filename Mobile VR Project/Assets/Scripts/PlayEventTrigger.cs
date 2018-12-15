@@ -32,6 +32,6 @@ public class PlayEventTrigger : MonoBehaviour {
 
     public void Click()
     {
-        SceneManager.LoadScene("PlayScene");
+        SceneManager.LoadScene("ExplainScene");
     }
 }

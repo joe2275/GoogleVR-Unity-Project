@@ -6,10 +6,13 @@ public class PlayerRotationSynchronizer : MonoBehaviour {
     [SerializeField]
     private Transform playerTransform;
 
+    private PlayerCameraController cameraController;
+
     private float distanceOfPlayer;
 
     private void Awake()
     {
+        cameraController = FindObjectOfType<PlayerCameraController>();
         distanceOfPlayer = playerTransform.localPosition.y;
     }
 
@@ -20,6 +23,10 @@ public class PlayerRotationSynchronizer : MonoBehaviour {
         transform.position = new Vector3(transform.position.x + distance * Mathf.Sin(-transform.eulerAngles.z * Mathf.PI / 180.0f),
             transform.position.y + distance * Mathf.Cos(-transform.eulerAngles.z * Mathf.PI / 180.0f), transform.position.z + playerTransform.localPosition.z);
         playerTransform.localPosition = new Vector3(0.0f, distanceOfPlayer, 0.0f);
+        if (!cameraController.isStop && !cameraController.isFalling)
+        {
+            transform.Translate(0.0f, 0.0f, 0.005f, Space.World);
+        }
     }
 
 

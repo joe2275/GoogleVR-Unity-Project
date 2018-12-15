@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerCameraController : MonoBehaviour {
     [SerializeField]
@@ -16,33 +17,79 @@ public class PlayerCameraController : MonoBehaviour {
     private Animator playerAnimator;
     [SerializeField]
     private Rigidbody playerRb;
-    private bool isStop;
+    [SerializeField]
+    private GameObject gameOverImage;
+    [SerializeField]
+    private Text scoreText;
+    [SerializeField]
+    private AudioSource audioSource;
+
+    public bool isStop { get; private set; }
+    public bool isFalling { get; private set; }
 
     private MagneticController magneticController;
-
+    private int currentScore;
 
     private void Start()
     {
         isStop = false;
+        isFalling = false;
+        currentScore = -20;
         magneticController = MagneticController.instance;
     }
 
     private void Update()
     {
-        CheckCameraRotation();
+        checkCameraRotation();
 
-        if (magneticController.CheckMagneticSensor() || Input.GetTouch(0).phase == TouchPhase.Began)
+        if (magneticController.CheckMagneticSensor() || (Input.touchCount != 0 && Input.GetTouch(0).phase == TouchPhase.Began) || Input.GetKeyDown(KeyCode.A))
         {
             Click();
         }
 
-        if(!isStop)
+        checkScore();
+    }
+
+    private void checkScore()
+    {
+        int updatedScore = (int)transform.position.y;
+        if(currentScore < updatedScore)
         {
-            playerRb.transform.Translate(new Vector3(0.0f, 0.0f, 0.005f), Space.World);
+            currentScore = updatedScore;
+            scoreText.text = "Score : " + currentScore;
         }
     }
 
-    public void CheckCameraRotation()
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.layer == 9 && !isFalling)
+        {
+            playerAnimator.enabled = true;
+            isFalling = true;
+            playerAnimator.SetTrigger("falling");
+            StartCoroutine(falling());
+            gameOverImage.SetActive(true);
+            audioSource.Play();
+        }
+    }
+
+    private IEnumerator falling()
+    {
+        float verticalVelocity = 0.0f;
+        float horizontalVelocity = 5.0f;
+        while(true)
+        {
+            verticalVelocity += 0.1f;
+            if (horizontalVelocity < +Mathf.Epsilon)
+            {
+                horizontalVelocity -= 0.001f;
+            }
+            rotationSynchronizer.Translate(new Vector3(0.0f, -verticalVelocity*Time.deltaTime, -horizontalVelocity*Time.deltaTime), Space.World);
+            yield return null;
+        }
+    }
+
+    private void checkCameraRotation()
     {
         float cameraChild_x = cameraChildTransform.position.x - cameraTransform.position.x;
         float cameraChild_y = cameraChildTransform.position.y - cameraTransform.position.y;
