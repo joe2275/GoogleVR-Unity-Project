@@ -6296,11 +6296,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400794, guid: a0caed2329b1ff545b145d48d6ef85d7,
     type: 2}
   m_PrefabInternal: {fileID: 1817117101}
---- !u!108 &502938374 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 108647238340788822, guid: e7adc5ad67fb9704588ebc686c5e59e4,
-    type: 2}
-  m_PrefabInternal: {fileID: 1676307217}
 --- !u!1001 &522773761
 Prefab:
   m_ObjectHideFlags: 0
@@ -15377,23 +15372,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1582971925}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1622495835 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1769376851354596, guid: e7adc5ad67fb9704588ebc686c5e59e4,
-    type: 2}
-  m_PrefabInternal: {fileID: 1676307217}
---- !u!114 &1622495836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1622495835}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e42818fa3de91e749bb8e67c09158a08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  light: {fileID: 502938374}
 --- !u!1 &1622819075
 GameObject:
   m_ObjectHideFlags: 0
